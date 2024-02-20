@@ -342,7 +342,7 @@
 .form-container textarea:focus {
     outline: none;
     border-color: #4CAF50;
-    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+    box-shadow: 0 0 5px rgba(75, 175, 80, 0.5);
 }
 
 .form-container textarea {
