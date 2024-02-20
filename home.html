@@ -144,7 +144,7 @@
                     </div>
                 
                     <div class="form-container">
-                        <form class="form-contato">
+                        <form class="form-contato" action="processar_formulario.php" method="POST">
                             <div class="form-field">
                                 <label for="nome"></label>
                                 <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
@@ -224,7 +224,7 @@
         </button>
         <div class="contact-options">
             <a><img src="/imagens/telefone.png" id="openForm" alt="Telefone"></a>
-            <a href="https://api.whatsapp.com/send?phone=1234567890" ><img src="/imagens/whatsapp.png" alt="WhatsApp"></a>
+            <a href="https://api.whatsapp.com/send?phone=47992460619" ><img src="/imagens/whatsapp.png" alt="WhatsApp"></a>
             <a href="mailto:seuemail@example.com"><img src="/imagens/email.png" alt="Email"></a>
         </div>
     </div>
@@ -232,7 +232,7 @@
     <div id="overlay" class="overlay"></div>
     
     <div id="ligacaoForm" class="ligacao-form">
-        <form>
+        <form class="form-contato" action="processar_formulario.php" method="POST">
             <h2>Solicitar uma Ligação</h2>
             <p>Nós ligamos para você. Informe seus dados abaixo para retornarmos o contato o mais breve possível.</p>
             <label for="nome">Seu Nome:</label>
