@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MGB Agronegocios</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="sobre.css">
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <a href="home.html">
+                <img src="imagens/logo.png" alt="logo">
+            </a>
+        </div>        
+        <nav class="menu-hamburger">
+            <input id="menu-hamburguer" type="checkbox" />
+            <label for="menu-hamburguer">
+                <div class="menu">
+                    <span class="hamburguer"></span>
+                </div>
+            </label>
+            <ul class="menu-hamburguer-elements show">
+                <li>
+                    <a href="home.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="#pag-section-sobre">Sobre Nós</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="right">
+            <nav>
+                <ul>
+                    <li><a href="home.html" class="header-btn inicio">Início</a></li>
+                    <li><a href="#pag-section-sobre" class="header-btn sobre">Sobre</a></li>
+                    <li><a href="home.html" class="header-btn contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section id="pag-section-sobre" class="pag-section-sobre">
+            <div class="section-sobre">
+                <div class="text-sobre">
+                    <h2>SOBRE NÓS</h2>
+                    <p>A MGB AGRO LTDA é uma empresa fundada no final de 2023 pelos sócios Daniel Chede Maia, Fábio Gunther e Oldair Barbosa. Com base em estudos e na experiência de seus fundadores, a empresa surgiu com a missão de atender às necessidades do mercado de produtos básicos na cadeia alimentar.</p>
+                    <p>Logo após a abertura da empresa, a MGB AGRO LTDA iniciou o processo de importação de alho e cebola da Argentina. Essa decisão estratégica pode ter sido motivada pela qualidade e disponibilidade desses produtos no mercado argentino, além de possíveis vantagens competitivas em termos de preço e logística.</p>
+                    <p>O objetivo principal da MGB AGRO LTDA é estabelecer parcerias sólidas e trabalhar em conjunto com seus fornecedores e clientes para oferecer produtos de excelente qualidade e garantir uma logística eficiente. Isso sugere um compromisso com a satisfação do cliente e com a entrega de produtos que atendam aos mais altos padrões de qualidade e segurança alimentar.</p>
+                    <p>Com uma abordagem voltada para a qualidade, parcerias estratégicas e excelência logística, a MGB AGRO LTDA busca se destacar em um mercado competitivo, garantindo a satisfação dos seus clientes e consolidando sua posição no setor de alimentos básicos.</p>
+                </div>
+        </section>
+    </main>
+    
+    <footer id="footer">
+        <div class="colunas">
+            <!-- Bloco do logo (à esquerda) -->
+            <div class="coluna">
+                <div class="logo-footer">
+                    <a href="home.html">
+                        <img src="imagens/logo.png" alt="logo">
+                    </a>
+                </div>
+            </div>
+            <!-- Bloco de contato (no meio) -->
+            <div class="coluna">
+                <div class="contato">
+                    <h2>Contato</h2>
+                    <ul>     
+                        <li>
+                            <img src="imagens/email.png" alt="Ícone Email">
+                            <span>fehh.ernn@gmail.com</span>
+                        </li>
+                        <li>
+                            <img src="imagens/email.png" alt="Ícone Email">
+                            <span>fehh.ernn@gmail.com</span>
+                        </li>
+                        <li class="whatsapp">
+                            <img src="imagens/whatsapp.png" alt="Ícone WhatsApp">
+                            <span>(47) 99246-0619</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Bloco de redes sociais (à direita) -->
+            <div class="coluna">
+                <div class="redes-sociais">
+                    <h2>Nossas Redes</h2>
+                    <ul>
+                        <li><a href="#"><img src="imagens/facebook.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="imagens/instagram.png" alt="Instagram"></a></li>
+                        <li><a href="#"><img src="imagens/linkedin.png" alt="LinkedIn"></a></li>
+                        <li><a href="#"><img src="imagens/whatsapp.png" alt="WhatsApp"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top-btn" title="Voltar ao Topo">&uarr;</button>
+
+    <div class="contact-combo">
+        <button class="toggle-contact" title="Contato">
+            <span class="phone-icon visually-hidden">Telefone</span>
+        </button>
+        <div class="contact-options">
+            <a><img src="/imagens/telefone.png" id="openForm" alt="Telefone"></a>
+            <a href="https://api.whatsapp.com/send?phone=1234567890" ><img src="/imagens/whatsapp.png" alt="WhatsApp"></a>
+            <a href="mailto:seuemail@example.com"><img src="/imagens/email.png" alt="Email"></a>
+        </div>
+    </div>
+
+    <div id="overlay" class="overlay"></div>
+    
+    <div id="ligacaoForm" class="ligacao-form">
+        <form>
+            <h2>Solicitar uma Ligação</h2>
+            <p>Nós ligamos para você. Informe seus dados abaixo para retornarmos o contato o mais breve possível.</p>
+            <label for="nome">Seu Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">Seu Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" value="+55" required>
+            <label for="finalidade">Finalidade:</label>
+            <select id="finalidade" name="finalidade" required>
+                <option value="">Selecione...</option>
+                <option value="duvida">Dúvida</option>
+                <option value="suporte">Suporte</option>
+                <option value="vendas">Vendas</option>
+            </select>
+            <label for="horario">Horário:</label>
+            <input type="time" id="horario" name="horario" min="07:00" max="18:00" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4">Olá, você poderia ligar para o meu telefone?</textarea>
+            <div class="buttons">
+                <button type="submit">Solicitar Ligação</button>
+                <button type="button" id="fecharForm">Fechar</button>
+            </div>
+        </form>
+    </div>   
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    var backToTopButton = document.getElementById('back-to-top-btn');
+
+    // Exibe ou oculta o botão dependendo da posição de rolagem
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+            backToTopButton.style.display = 'block';
+        } else {
+            backToTopButton.style.display = 'none';
+        }
+    });
+
+    // Adiciona a funcionalidade de rolagem suave ao clicar no botão
+    backToTopButton.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var toggleContactButton = document.querySelector('.toggle-contact');
+        var contactCombo = document.querySelector('.contact-combo');
+
+        // Mostra ou esconde as opções de contato ao clicar no botão
+        toggleContactButton.addEventListener('click', function() {
+            contactCombo.classList.toggle('active');
+        });
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+var toggleContactButton = document.querySelector('.toggle-contact');
+var contactCombo = document.querySelector('.contact-combo');
+
+// Mostra ou esconde as opções de contato ao clicar no botão
+toggleContactButton.addEventListener('click', function() {
+    toggleContactButton.classList.toggle('active');
+});
+});
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var openFormButton = document.getElementById('openForm');
+        var ligacaoForm = document.getElementById('ligacaoForm');
+        var fecharFormButton = document.getElementById('fecharForm');
+        
+        openFormButton.addEventListener('click', function(event) {
+            event.preventDefault();
+            ligacaoForm.classList.add('show');
+        });
+        
+        fecharFormButton.addEventListener('click', function() {
+            ligacaoForm.classList.remove('show');
+        });
+    });
+</script>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var openFormButton = document.getElementById('openForm');
+        var ligacaoForm = document.getElementById('ligacaoForm');
+        var fecharFormButton = document.getElementById('fecharForm');
+        var overlay = document.querySelector('.overlay');
+        
+        openFormButton.addEventListener('click', function(event) {
+            event.preventDefault();
+            ligacaoForm.classList.add('show');
+            overlay.style.display = 'block';
+        });
+        
+        fecharFormButton.addEventListener('click', function() {
+            ligacaoForm.classList.remove('show');
+            overlay.style.display = 'none';
+        });
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var openFormButton = document.getElementById('openForm');
+        var ligacaoForm = document.getElementById('ligacaoForm');
+        var overlay = document.getElementById('overlay');
+        var fecharFormButton = document.getElementById('fecharForm');
+        
+        openFormButton.addEventListener('click', function(event) {
+            event.preventDefault();
+            ligacaoForm.classList.add('show');
+            overlay.classList.add('show');
+        });
+        
+        fecharFormButton.addEventListener('click', function() {
+            ligacaoForm.classList.remove('show');
+            overlay.classList.remove('show');
+        });
+    });
+</script>
+
+</body>
+</html>

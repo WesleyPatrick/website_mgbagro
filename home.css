@@ -1,0 +1,1130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#header {
+    background-color: #f8f9fa; 
+    padding: 25px 200px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Certifique-se de que o z-index seja maior que outros elementos na página */
+}
+
+#header .right ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+    align-items: center; /* Alinhar os itens verticalmente */
+}
+
+#header .right ul li {
+    margin-right: 10px;
+}
+
+.header-btn {
+    position: relative;
+    background-color: transparent;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 21px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.header-btn::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.header-btn:hover::after {
+    background-color: #4CAF50;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+/*FimHeader*/
+
+/*SectionCarrossel*/
+
+.carousel{
+    width: 100%;
+}
+
+.carousel-inner{
+    height: 380px;
+    margin-top: 130px;
+}
+
+/*SectionSobreNós*/
+
+.pag-section-sobre {
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    color: white;
+}
+
+.section-sobre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    height: 400px;
+}
+
+.text-sobre {
+    max-width: 50%;
+}
+
+.text-sobre h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color:#fb9e00;
+    border-bottom: solid 2px;
+    width: 30%;
+}
+
+.text-sobre p {
+    font-size: 20px;
+    color:#000000;
+    margin-right: 1rem;
+}
+
+.image-sobre img {
+    max-width: 100%;
+    width: 97%;
+    height: 280px; 
+    border-radius: 45px;
+}
+
+.saiba-mais {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #009800;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.saiba-mais:hover {
+    background-color: #027502;
+}
+
+/*SectionParallax*/
+
+.parallax-section {
+    height: 220px;
+    background-image: url('/imagens/bg_prado_verde.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.parallax-title{
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.parallax-p{
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+/*SectionMosaico*/
+
+.our-structure-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.section-title {
+    color: #fb9e00;
+    font-size: 25px;
+    border-bottom: solid 2px;
+    width: 15%;
+    margin: 0 auto 45px auto;
+
+}
+
+.image-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 930px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+    flex: 1;
+    padding: 10px 25px;
+    max-width: 330px;
+}
+
+.image-container {
+    width: 265px;
+    height: 235px;
+    margin-bottom: 35px;
+    border-radius: 45px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*SectionForm*/
+
+.pag-section-form {
+    text-align: center;
+}
+
+.form-contato{
+    width: 100%;
+}
+
+.background-image {
+    position: relative;
+    background-image: url('/imagens/bg_prado_laranja.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 550px;
+}
+
+.form-container-text,
+.form-container {
+    width: 30%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.form-container-text .form-text {
+    text-align: left;
+}
+
+.form-container-text {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.form-text{
+    h2{
+      font-size: 33px; 
+    }
+
+    .color-h2{
+        color: #ef7300;
+        font-weight: 500;
+    }
+
+    h2 b{
+        font-size: 28px;
+        position: relative;
+        top: -15px;
+    }
+
+    p{
+        font-size: 17px;
+    }
+}
+
+.form-container {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-field {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="tel"],
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #ccc;
+}
+
+.form-container button[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.form-container textarea {
+    resize: vertical;
+}
+
+@media (max-width: 992px) {
+    .form-container-text,
+    .form-container {
+        width: 100%;
+    }
+}
+
+.imginicio {
+    position: relative;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.imginicio .img-overlay button {
+    background-color: #ff7b00;
+    color: #fff;
+    border: none;
+    padding: 10px 40px;
+    font-size: 19px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.imginicio .img-overlay button:hover {
+    background-color: #c4971c;
+    color: #fff;
+}
+
+.imginicio img{
+    width: 100%;
+    height: 1000px;
+}
+
+.imginicio h1{
+    font-size: 50px;
+}
+
+.enviarnov button[type="submit"] {
+    background-color: #009800;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 0 135px 10px 0;
+}
+
+.enviarcont button[type="submit"] {
+    background-color: #009800;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.enviarcont button[type="submit"]:hover,
+.enviarnov button[type="submit"]:hover {
+    background-color: #027502;
+}
+
+/*Footer*/
+
+#footer {
+    background-color: #f8f9fa;
+    padding: 0 190px 0 190px;
+}
+
+.colunas {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.coluna {
+    width: 30%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.coluna h2 {
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    color:  #4CAF50;
+}
+
+.contato ul li img {
+    font-size: 1em;
+    width: 1em;
+    height: auto;
+}
+
+.contato ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.redes-sociais ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    gap: 5px;
+}
+
+.redes-sociais h2{
+    margin-top:-38px;
+}
+
+.redes-sociais ul li {
+    margin-right: 10px;
+}
+
+.redes-sociais ul li img {
+    font-size: 1.5em;
+    width: 1em;
+    height: auto;
+}
+
+.logo-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.logo-footer img {
+    width: 10vw;
+    max-width: 165px;
+}
+
+@media (max-width: 768px){
+    /* Footer */
+    #footer {
+        padding: 0 20px;
+    }
+
+    .coluna {
+        width: 100%; /* Ocupando toda a largura */
+        margin-bottom: 0px; /* Espaçamento entre as colunas */
+    }
+
+    .colunas {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 500px;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 992px) {
+    /* Header */
+    #header {
+        padding: 15px 20px;
+        gap: 20px;
+    }
+
+    .logo img {
+        width: 100px; /* Reduzindo o tamanho do logo */
+    }
+
+    .right {
+        display: none; /* Escondendo o menu principal */
+    }
+
+    .header-btn {
+        display: block; /* Tornando visíveis os botões do menu */
+    }
+
+    /* Footer */
+    #footer {
+        padding: 0 20px;
+    }
+
+    .coluna {
+        width: 100%; /* Ocupando toda a largura */
+    }
+    
+    .colunas {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 500px;
+    }
+    
+    /* Sections */
+    .pag-section-sobre,
+    .our-structure-section,
+    .pag-section-form,
+    .parallax-section
+    .section-carrossel {
+        position: relative; /* Adicione uma posição relativa */
+        z-index: 2; /* Defina um z-index menor que o carrossel */
+    }
+
+    .our-structure-section{
+        .section-title{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-bottom: solid 2px;
+            margin: 0 auto 45px auto;
+            font-size: 24px;
+        }
+    }
+
+    .section-carrossel {
+        position: relative; /* Adicione uma posição relativa */
+        z-index: 1; /* Defina um z-index maior */
+        margin-top: 84px;
+    }
+
+    .carousel {
+        width: 100%;
+        position: relative; /* Adicione uma posição relativa */
+    }
+    
+    .carousel-inner {
+        height: 220px;
+        position: relative; /* Adicione uma posição relativa */
+        z-index: 1; /* Defina um z-index maior */
+        margin-top: 84px;
+    }
+    
+    .carousel-item {
+        min-height: 200px; /* Defina a altura mínima que desejar */
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Parallax */
+
+    .parallax-section{
+        height: 100px;
+    }
+
+    .parallax-title,
+    .parallax-p {
+        font-size: 17px; /* Reduzindo o tamanho da fonte */
+    }
+
+    /* Sobre Nós */
+    .section-sobre {
+        flex-direction: column; /* Alinhe os itens verticalmente */
+        height: auto; /* Altura automática para ajustar ao conteúdo */
+        align-items: center; /* Centralize os itens horizontalmente */
+        text-align: center; /* Centralize o texto */
+    }
+
+    .pag-section-sobre {
+        padding: 20px 20px 50px; /* Reduza o padding da seção */
+    }
+
+    .text-sobre {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .text-sobre p{
+        font-size: 20px;
+        color:#000000;
+        margin-right: 0px;
+    }
+
+    .text-sobre h2 {
+        font-size: 23px;
+        margin-bottom: 10px;
+        color: #fb9e00;
+        border-bottom: solid 2px;
+        width: 38%;
+        text-align: center; /* Centralize o texto */
+        margin: 0 auto 15px; /* Centralize horizontalmente */
+    }
+    
+    .image-sobre img {
+        width: 100%; /* Reduza a largura da imagem */
+        height: auto; /* Altura automática para manter a proporção */
+        border-radius: 10px; /* Reduza o raio da borda */
+    }
+
+    /* Estrutura */
+    .image-layout .row {
+        flex-direction: column; /* Exibindo as imagens em coluna */
+        align-items: center; /* Centralizando as imagens */
+    }
+
+    .column {
+        padding: 10px 0; /* Espaçamento interno */
+    }
+
+    .image-container {
+        width: 100%; /* Utilizando toda a largura disponível */
+        margin-bottom: 20px; /* Espaçamento inferior */
+    }
+
+    /* Formulário */
+    .form-container-text,
+    .form-container {
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .background-image {
+        padding: 20px 0; /* Reduzindo o padding vertical */
+    }
+
+    .form-wrapper {
+        flex-direction: column; /* Exibindo os elementos em coluna */
+        height: auto;
+    }
+    
+    .form-text h2,
+    .color-h2 {
+        font-size: 22px; /* Reduzindo o tamanho da fonte */
+    }
+}
+
+@media (max-width: 992px) {
+.logo-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    }
+
+.logo-footer img {
+    width: 100vw;
+    max-width: 165px;
+    }
+}
+
+/*MenuHamburguer*/
+.menu {
+    background-color: transparent;
+    width: 60px;
+    height: 60px;
+    margin: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-hamburger{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.menu-hamburguer-elements{
+    display: flex;
+    width: 80%;
+    height: 10vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-hamburguer-elements li{
+    list-style: none;
+    font-size: 1.4rem;
+    margin: 2rem 0;
+    font-size: 1.4rem;
+    list-style: none;
+}
+
+.menu-hamburguer-elements a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.menu-hamburguer-elements a:hover{
+    color: rgba(20,20,20,.8)
+}
+  
+.hamburguer {
+    position: relative;
+    display: block;
+    background: #000000;
+    width: 30px;
+    height: 2px;
+    top: 27px;
+    left: 10px;
+    transition: 0.5s ease-in-out;
+}
+  
+.hamburguer:before,
+.hamburguer:after {
+    background: #000000;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+}
+  
+.hamburguer:before {
+    top: -10px;
+}
+  
+.hamburguer:after {
+    bottom: -10px;
+}
+  
+/* rotação dos elementos do span */
+input:checked ~ label .hamburguer {
+    transform: rotate(45deg);
+}
+
+input:checked ~ label .hamburguer:before {
+    transform: rotate(90deg);
+    top: 0;
+}
+  
+input:checked ~ label .hamburguer:after {
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+input:checked ~ .menu-hamburguer-elements{
+    left: 0;
+}
+
+@media (max-width: 992px){
+    
+    header {
+        height: 10%;
+    }
+
+    .menu-hamburguer-elements a:hover {
+        color: rgb(214, 161, 214);
+    }
+    
+    .menu-hamburger {
+        display: flex;
+        width: auto;
+        flex-direction: column;
+        align-self: flex-start;
+        overflow: auto;
+        z-index: 3;
+        position: relative;
+        color: white;
+    }
+
+    input#menu-hamburguer {
+        display: none;
+    }
+
+    .menu-hamburguer-elements {
+        width: 100%;
+        height: 26%;
+        background-color: #009800;
+        position: fixed;
+        left: 0;
+        top: -100%;       
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 0!important;
+        z-index: -1;
+    }
+
+    .menu {
+        display: flex;
+        height: 50px;
+        width: 50px;
+    }
+
+    /* Mudança no estado ativado do menu */
+    input:checked ~ .menu-hamburguer-elements {
+        top: 84px; /* Movendo o menu para a parte superior da tela */
+    }
+}
+
+#back-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #009800;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    box-shadow: 1px 1px 3px #0008;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#back-to-top-btn:hover {
+    background-color: #008000; /* Muda a cor de fundo no hover */
+    box-shadow: 1px 1px 3px #0008; /* Adiciona uma sombra no hover */
+}
+
+@media (max-width: 768px) {
+    #back-to-top-btn {
+        font-size: 20px;
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+.contact-combo {
+    position: fixed;
+    bottom: 19px;
+    left: 10px;
+    z-index: 1000;
+}
+
+/* Estilo do botão de contato */
+.toggle-contact {
+    background-color: #009800;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 3px #0008;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Adiciona transições suaves */
+    background-image: url('/imagens/whatsapp.png');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Estilo do botão de contato quando está ativo */
+.toggle-contact.active {
+    background-color: #dc3545;
+    font-size: 20px;
+    background-image: none;
+}
+
+/* Estilo do botão de contato no hover */
+.toggle-contact:hover {
+    background-color: #008000; /* Muda a cor de fundo no hover */
+    box-shadow: 1px 1px 3px #0008; /* Adiciona uma sombra no hover */
+}
+
+/* Estilo do texto "X" dentro do botão de contato quando está ativo */
+.toggle-contact.active::before {
+    content: "✖️";
+    line-height: 50px;
+}
+
+/* Estilo da lista de opções de contato */
+.contact-options {
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-options img {
+    width: 30px; /* Define a largura desejada para todas as imagens */
+    height: 30px; /* Define a altura desejada para todas as imagens */
+}
+
+/* Exibe as opções de contato quando o botão está ativo */
+.contact-combo.active .contact-options {
+    display: flex;
+}
+
+/* Estilo dos links de opções de contato */
+.contact-options a {
+    background-color: #009800;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo dos links de opções de contato no hover */
+.contact-options a:hover {
+    background-color: #008000; /* Muda a cor de fundo no hover */
+}
+
+.ligacao-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
+
+.ligacao-form.show {
+    display: block;
+}
+
+.ligacao-form form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.ligacao-form h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.ligacao-form p {
+    margin-bottom: 20px;
+}
+
+.ligacao-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.ligacao-form input,
+.ligacao-form select,
+.ligacao-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.ligacao-form .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ligacao-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #009800;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ligacao-form button:hover {
+    background-color: #008000;
+}
+
+/*MobileFormTelefone*/
+@media (max-width: 992px) {
+    .ligacao-form {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        z-index: 9999;
+    }
+
+    .ligacao-form.show {
+        display: block;
+    }
+
+    .ligacao-form form {
+        max-width: 650px;
+        width: 300px;
+        height: 800px;
+        margin: 0 auto;
+    }
+
+    .ligacao-form h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .ligacao-form p {
+        margin-bottom: 20px;
+    }
+
+    .ligacao-form label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .ligacao-form input,
+    .ligacao-form select,
+    .ligacao-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .ligacao-form .buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .ligacao-form button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #009800;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .ligacao-form button:hover {
+        background-color: #008000;
+    }
+
+    .contact-combo {
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        z-index: 1000;
+    }
+}
+/*FimForm*/
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay escuro com transparência */
+    display: none; /* Inicialmente oculto */
+    z-index: 1001; /* Z-index alto para garantir que esteja na frente de outros elementos */
+}
+
+.overlay.show {
+    display: block; /* Exibe o overlay quando o formulário é aberto */
+}

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MGB Agronegocios</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-3I5MeYa1JL2A2rC5vjD5eJKE5NL/mT5ZDI61C/PuqpWOgwg++7/+qjOrsOwVmvPS" crossorigin="anonymous">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <a href="#header">
+                <img src="imagens/logo.png" alt="logo">
+            </a>
+        </div>        
+        <nav class="menu-hamburger">
+            <input id="menu-hamburguer" type="checkbox" />
+            <label for="menu-hamburguer">
+                <div class="menu">
+                    <span class="hamburguer"></span>
+                </div>
+            </label>
+            <ul class="menu-hamburguer-elements show">
+                <li>
+                    <a href="#pag-section-sobre">Sobre Nós</a>
+                </li>
+                <li>
+                    <a href="#pag-section-contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="right">
+            <nav>
+                <ul>
+                    <li><a href="#header" class="header-btn inicio">Início</a></li>
+                    <li><a href="#pag-section-sobre" class="header-btn sobre">Sobre</a></li>
+                    <li><a href="#pag-section-contato" class="header-btn contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="section-carrossel">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/imagens/foto1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/imagens/foto2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/imagens/foto3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+
+        <section id="pag-section-sobre" class="pag-section-sobre">
+            <div class="section-sobre">
+                <div class="text-sobre">
+                    <h2>SOBRE NÓS</h2>
+                    <p>A MGB AGRO LTDA é uma empresa fundada no final de 2023 pelos sócios Daniel Chede Maia, Fábio Gunther e Oldair Barbosa. Com base em estudos e na experiência de seus fundadores, a empresa surgiu com a missão de atender às necessidades do mercado de produtos básicos na cadeia alimentar.</p>
+                    <a href="sobre.html" class="saiba-mais">Saiba Mais</a>
+                </div>
+                <div class="image-sobre">
+                    <img src="/imagens/bg_cebola.jpg" alt="Descrição da Imagem">
+                </div>
+            </div>
+        </section>
+
+        <section class="parallax-section">
+            <h2 class="parallax-title">Semeando tradição,</h2> 
+            <h2 class="parallax-p"><b>colhendo sucesso!</b></h2>
+        </section>
+
+        <section class="our-structure-section">
+            <h2 class="section-title">NOSSA ESTRUTURA</h2>
+            <div class="image-layout">
+                <div class="row">
+                    <div class="column">
+                        <div class="image-container">
+                            <img src="/imagens/bg_cebola.jpg" alt="Imagem 1">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="image-container">
+                            <img src="imagens/foto1.jpg" alt="Imagem 2">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="image-container">
+                            <img src="imagens/foto1.jpg" alt="Imagem 3">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <div class="image-container">
+                            <img src="imagens/foto1.jpg" alt="Imagem 4">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="image-container">
+                            <img src="imagens/foto1.jpg" alt="Imagem 5">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="image-container">
+                            <img src="/imagens/bg_cebola.jpg" alt="Imagem 6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pag-section-contato" class="pag-section-form">
+            <div class="background-image">
+                <div class="form-wrapper">
+                    <div class="form-container-text">
+                        <div class="form-text">
+                            <h2 class="color-h2">Ficou interessado?</h2>
+                            <h2 class="color-h2"><b>Entre em contato conosco!</b></h2>
+                            <p>Nossa equipe está preparada para atendê-lo. <b>Preencha o formulário </b> ao lado e converse com nossos especialistas.</p>
+                        </div>
+                    </div>
+                
+                    <div class="form-container">
+                        <form class="form-contato">
+                            <div class="form-field">
+                                <label for="nome"></label>
+                                <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="email"></label>
+                                <input type="email" id="email" name="email" placeholder="Melhor Email" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="telefone"></label>
+                                <input type="tel" id="telefone" name="telefone" placeholder="Telefone">
+                            </div>
+                            <div class="form-field">
+                                <label for="mensagem"></label>
+                                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Mensagem"></textarea>
+                            </div>
+                            <div class="enviarcont">
+                                <button type="submit">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer id="footer">
+        <div class="colunas">
+            <!-- Bloco do logo (à esquerda) -->
+            <div class="coluna">
+                <div class="logo-footer">
+                    <a href="#header">
+                        <img src="imagens/logo.png" alt="logo">
+                    </a>
+                </div>
+            </div>
+            <!-- Bloco de contato (no meio) -->
+            <div class="coluna">
+                <div class="contato">
+                    <h2>Contato</h2>
+                    <ul>     
+                        <li>
+                            <img src="imagens/email.png" alt="Ícone Email">
+                            <span>fehh.ernn@gmail.com</span>
+                        </li>
+                        <li>
+                            <img src="imagens/email.png" alt="Ícone Email">
+                            <span>fehh.ernn@gmail.com</span>
+                        </li>
+                        <li class="whatsapp">
+                            <img src="imagens/whatsapp.png" alt="Ícone WhatsApp">
+                            <span>(47) 99246-0619</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Bloco de redes sociais (à direita) -->
+            <div class="coluna">
+                <div class="redes-sociais">
+                    <h2>Nossas Redes</h2>
+                    <ul>
+                        <li><a href="#"><img src="imagens/facebook.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="imagens/instagram.png" alt="Instagram"></a></li>
+                        <li><a href="#"><img src="imagens/linkedin.png" alt="LinkedIn"></a></li>
+                        <li><a href="#"><img src="imagens/whatsapp.png" alt="WhatsApp"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top-btn" title="Voltar ao Topo">&uarr;</button>
+
+    <div class="contact-combo">
+        <button class="toggle-contact" title="Contato">
+            <span class="phone-icon visually-hidden">Telefone</span>
+        </button>
+        <div class="contact-options">
+            <a><img src="/imagens/telefone.png" id="openForm" alt="Telefone"></a>
+            <a href="https://api.whatsapp.com/send?phone=1234567890" ><img src="/imagens/whatsapp.png" alt="WhatsApp"></a>
+            <a href="mailto:seuemail@example.com"><img src="/imagens/email.png" alt="Email"></a>
+        </div>
+    </div>
+
+    <div id="overlay" class="overlay"></div>
+    
+    <div id="ligacaoForm" class="ligacao-form">
+        <form>
+            <h2>Solicitar uma Ligação</h2>
+            <p>Nós ligamos para você. Informe seus dados abaixo para retornarmos o contato o mais breve possível.</p>
+            <label for="nome">Seu Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">Seu Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" value="+55" required>
+            <label for="finalidade">Finalidade:</label>
+            <select id="finalidade" name="finalidade" required>
+                <option value="">Selecione...</option>
+                <option value="duvida">Dúvida</option>
+                <option value="suporte">Suporte</option>
+                <option value="vendas">Vendas</option>
+            </select>
+            <label for="horario">Horário:</label>
+            <input type="time" id="horario" name="horario" min="07:00" max="18:00" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4">Olá, você poderia ligar para o meu telefone?</textarea>
+            <div class="buttons">
+                <button type="submit">Solicitar Ligação</button>
+                <button type="button" id="fecharForm">Fechar</button>
+            </div>
+        </form>
+    </div>   
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var links = document.querySelectorAll('a[href^="#"]');
+            
+            for (var i = 0; i < links.length; i++) {
+                links[i].addEventListener('click', scrollToSection);
+            }
+
+            function scrollToSection(e) {
+                e.preventDefault();
+
+                var targetId = this.getAttribute('href').substring(1);
+                var targetSection = document.getElementById(targetId);
+
+                if (targetSection) {
+                    var headerHeight = document.getElementById('header').offsetHeight;
+                    var targetPosition = targetSection.offsetTop - headerHeight;
+                    var windowHeight = window.innerHeight;
+                    var scrollPosition = targetPosition - (windowHeight / 7);
+
+                    window.scrollTo({
+                        top: scrollPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    </script>
+    
+    <script>
+        // Efeito de paralaxe
+        window.addEventListener('scroll', function(){
+            const parallax = document.querySelector('.parallax-section');
+            let scrollPosition = window.pageYOffset;
+
+            parallax.style.backgroundPositionY = scrollPosition * 0.8 + 'px';
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    var backToTopButton = document.getElementById('back-to-top-btn');
+
+    // Exibe ou oculta o botão dependendo da posição de rolagem
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+            backToTopButton.style.display = 'block';
+        } else {
+            backToTopButton.style.display = 'none';
+        }
+    });
+
+    // Adiciona a funcionalidade de rolagem suave ao clicar no botão
+    backToTopButton.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+});
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var toggleContactButton = document.querySelector('.toggle-contact');
+            var contactCombo = document.querySelector('.contact-combo');
+
+            // Mostra ou esconde as opções de contato ao clicar no botão
+            toggleContactButton.addEventListener('click', function() {
+                contactCombo.classList.toggle('active');
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    var toggleContactButton = document.querySelector('.toggle-contact');
+    var contactCombo = document.querySelector('.contact-combo');
+
+    // Mostra ou esconde as opções de contato ao clicar no botão
+    toggleContactButton.addEventListener('click', function() {
+        toggleContactButton.classList.toggle('active');
+    });
+});
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var openFormButton = document.getElementById('openForm');
+            var ligacaoForm = document.getElementById('ligacaoForm');
+            var fecharFormButton = document.getElementById('fecharForm');
+            
+            openFormButton.addEventListener('click', function(event) {
+                event.preventDefault();
+                ligacaoForm.classList.add('show');
+            });
+            
+            fecharFormButton.addEventListener('click', function() {
+                ligacaoForm.classList.remove('show');
+            });
+        });
+    </script>
+
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var openFormButton = document.getElementById('openForm');
+            var ligacaoForm = document.getElementById('ligacaoForm');
+            var fecharFormButton = document.getElementById('fecharForm');
+            var overlay = document.querySelector('.overlay');
+            
+            openFormButton.addEventListener('click', function(event) {
+                event.preventDefault();
+                ligacaoForm.classList.add('show');
+                overlay.style.display = 'block';
+            });
+            
+            fecharFormButton.addEventListener('click', function() {
+                ligacaoForm.classList.remove('show');
+                overlay.style.display = 'none';
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var openFormButton = document.getElementById('openForm');
+            var ligacaoForm = document.getElementById('ligacaoForm');
+            var overlay = document.getElementById('overlay');
+            var fecharFormButton = document.getElementById('fecharForm');
+            
+            openFormButton.addEventListener('click', function(event) {
+                event.preventDefault();
+                ligacaoForm.classList.add('show');
+                overlay.classList.add('show');
+            });
+            
+            fecharFormButton.addEventListener('click', function() {
+                ligacaoForm.classList.remove('show');
+                overlay.classList.remove('show');
+            });
+        });
+    </script>
+
+</body>
+</html>
