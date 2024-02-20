@@ -175,16 +175,15 @@
 
 .our-structure-section {
     text-align: center;
-    padding: 50px 0;
+    padding: 30px 0;
 }
 
 .section-title {
     color: #fb9e00;
     font-size: 25px;
     border-bottom: solid 2px;
-    width: 15%;
+    width: 13%;
     margin: 0 auto 45px auto;
-
 }
 
 .image-layout {
@@ -342,7 +341,7 @@
 .form-container textarea:focus {
     outline: none;
     border-color: #4CAF50;
-    box-shadow: 0 0 5px rgba(75, 175, 80, 0.5);
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
 }
 
 .form-container textarea {
@@ -354,7 +353,16 @@
     .form-container {
         width: 100%;
     }
+
+    .section-title {
+        color: #fb9e00;
+        font-size: 25px;
+        border-bottom: solid 2px;
+        width: 56%;
+        margin: 0 auto 45px auto;
+    }
 }
+
 
 .imginicio {
     position: relative;
@@ -572,12 +580,12 @@
     }
 
     .our-structure-section{
-        .section-title{
+        .section-title {
             display: flex;
             flex-direction: column;
             align-items: center;
             border-bottom: solid 2px;
-            margin: 0 auto 45px auto;
+            margin: 0 auto 0px auto;
             font-size: 24px;
         }
     }
@@ -595,13 +603,19 @@
     
     .carousel-inner {
         height: 220px;
-        position: relative; /* Adicione uma posição relativa */
-        z-index: 1; /* Defina um z-index maior */
-        margin-top: 84px;
+        position: relative;
+        z-index: 1;
+        margin-top: 0px;
     }
     
     .carousel-item {
         min-height: 200px; /* Defina a altura mínima que desejar */
+    }
+
+    #carouselExampleSlidesOnly
+        .carousel-item {
+            min-height: 200px; 
+            padding: 20px;
     }
 
     .carousel-item img {
@@ -609,10 +623,17 @@
         height: auto;
     }
 
+    #carouselExampleSlidesOnly
+        .carousel-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 25px;
+    }
+
     /* Parallax */
 
     .parallax-section{
-        height: 100px;
+        height: 130px;
     }
 
     .parallax-title,
@@ -736,17 +757,16 @@
     align-items: center;
 }
 
-.menu-hamburguer-elements li{
-    list-style: none;
-    font-size: 1.4rem;
-    margin: 2rem 0;
-    font-size: 1.4rem;
+.menu-hamburguer-elements li {
+    margin: 1.1rem 0;
+    font-size: 1.3rem;
     list-style: none;
 }
 
 .menu-hamburguer-elements a{
     color: rgb(255, 255, 255);
     text-decoration: none;
+    border-bottom: 2px solid #fb9e00;
 }
 
 .menu-hamburguer-elements a:hover{
@@ -809,7 +829,7 @@ input:checked ~ .menu-hamburguer-elements{
     }
 
     .menu-hamburguer-elements a:hover {
-        color: rgb(214, 161, 214);
+        color: rgb(255, 255, 255);
     }
     
     .menu-hamburger {
@@ -829,7 +849,7 @@ input:checked ~ .menu-hamburguer-elements{
 
     .menu-hamburguer-elements {
         width: 100%;
-        height: 26%;
+        height: 20%;
         background-color: #009800;
         position: fixed;
         left: 0;
@@ -840,6 +860,7 @@ input:checked ~ .menu-hamburguer-elements{
         justify-content: center;
         padding-left: 0!important;
         z-index: -1;
+        border-radius: 0px 0px 20px 20px;
     }
 
     .menu {
@@ -920,7 +941,6 @@ input:checked ~ .menu-hamburguer-elements{
 
 /* Estilo do botão de contato no hover */
 .toggle-contact:hover {
-    background-color: #008000; /* Muda a cor de fundo no hover */
     box-shadow: 1px 1px 3px #0008; /* Adiciona uma sombra no hover */
 }
 
@@ -955,6 +975,7 @@ input:checked ~ .menu-hamburguer-elements{
     background-color: #009800;
     color: white;
     border: none;
+    box-shadow: 1px 1px 3px #0008;
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -968,7 +989,7 @@ input:checked ~ .menu-hamburguer-elements{
 
 /* Estilo dos links de opções de contato no hover */
 .contact-options a:hover {
-    background-color: #008000; /* Muda a cor de fundo no hover */
+    background-color: #009800; /* Muda a cor de fundo no hover */
 }
 
 .ligacao-form {
@@ -1127,4 +1148,24 @@ input:checked ~ .menu-hamburguer-elements{
 
 .overlay.show {
     display: block; /* Exibe o overlay quando o formulário é aberto */
+}
+
+@media (max-width: 992px) {
+
+.saiba-mais {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #009800;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.saiba-mais:hover {
+    background-color: #027502;
+    }
 }
