@@ -81,7 +81,7 @@
 /*SectionSobreNós*/
 
 .pag-section-sobre {
-    background-image: url('');
+    background-image: url('imagens/bg_formulario.png');
     background-size: cover;
     background-position: center;
     padding: 50px;
@@ -246,11 +246,12 @@
 .form-container-text,
 .form-container {
     width: 30%;
-    background-color: #fff;
+    background-color: #f2f2f2;
     padding: 30px;
     border-radius: 30px;
     display: flex;
     align-items: center;
+    
 }
 
 .form-container-text .form-text {
@@ -260,6 +261,10 @@
 .form-container-text {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+    background-image: url('imagens/bg_formulario.png');
+    @media (max-width: 992px) {
+        background-image: none;
+    }
 }
 
 .form-text{
@@ -346,6 +351,7 @@
 
 .form-container textarea {
     resize: vertical;
+    max-height: 200px;
 }
 
 @media (max-width: 992px) {
@@ -825,7 +831,7 @@ input:checked ~ .menu-hamburguer-elements{
 @media (max-width: 992px){
     
     header {
-        height: 10%;
+        height: 84px;
     }
 
     .menu-hamburguer-elements a:hover {
