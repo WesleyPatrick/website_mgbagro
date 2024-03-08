@@ -615,7 +615,7 @@
     }
     
     .carousel-item {
-        min-height: 200px; /* Defina a altura mínima que desejar */
+        min-height: 200px;
     }
 
     #carouselExampleSlidesOnly

@@ -445,7 +445,7 @@ input:checked ~ .menu-hamburguer-elements{
 @media (max-width: 992px){
     
     header {
-        height: 10%;
+        height: 84px;
     }
 
     .menu-hamburguer-elements a:hover {
