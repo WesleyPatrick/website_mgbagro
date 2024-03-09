@@ -602,6 +602,8 @@
         margin-top: 84px;
     }
 
+    
+
     .carousel {
         width: 100%;
         position: relative; /* Adicione uma posição relativa */
@@ -620,13 +622,12 @@
 
     #carouselExampleSlidesOnly
         .carousel-item {
-            min-height: 200px; 
+
             padding: 20px;
     }
 
     .carousel-item img {
-        width: 100%;
-        height: auto;
+
     }
 
     #carouselExampleSlidesOnly
